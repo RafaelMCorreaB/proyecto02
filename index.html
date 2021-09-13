@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+    <head>
+        <style>
+            /* body{
+                background-color: blue;
+            }
+            h1{
+                color: blueviolet;
+                text-align: center;
+            }
+            p{
+                font-family: Verdana, sans-serif;
+                font-size: 20px;
+                color: coral;
+            }
+            #identificador{
+                border: 1px solid yellow;
+                color: gold;
+                background-color: lightgreen;
+            } */
+        </style>
+        <link rel="stylesheet" href="resources/css/style.css"/>
+        <title>Titulo de la pagina</title>
+    </head>
+
+    <body>
+        <!-- etiqueta con atributos -->
+        <h1 style="font-size:45px;background-color: rgb(32, 218, 72);" >Encabezado</h1>
+        <h1>Encabezado</h1>
+        <h3>Encabezado</h3>
+        <h4>Encabezado</h4>
+        <h5>Encabezado</h5>
+        <h6>Encabezado</h6>
+
+        <!-- etiqueta de bloque -->
+        <p>Parrafos cortos</p>
+        <p>Parrafos</p>
+        <p>Parrafos</p>
+
+        <pre>
+            Esta es una 
+            esta es otra linea
+        </pre>
+
+        <!-- Items viñetas  -->
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <!-- items numerados -->
+        <ol>
+            <li><a href ="#">One</a></li>
+            <li>One</li>
+            <li>One</li>
+            <li>One</li>
+        </ol>
+
+        <!-- vinculo -->
+        <a href ="pagina.html">vinculo</a>
+
+        <h3>tabla de usuarios</h3>
+        <!-- tabla, esta permite organizar en forma de tabla. th para encabezados y td es para contenido de celda-->
+        <table border ="1">
+            <tr>
+                <!-- "th" cabeceras de la tabla -->
+                <th>Id</th>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+
+            <!-- fila 1 -->
+            <tr>
+                <td><i style="color:blue;">01</i></td>
+                <td>Ramiro</td>
+                <td>Guzman</td>
+                <td>ramiroguzman@gmail.com</td>
+            </tr>
+
+            <!-- fila 2 -->
+            <tr>
+                <td>02</td>
+                <td>Andres</td>
+                <td>Durango</td>
+                <td>andresdurando@gmail,com</td>
+            </tr>
+        </table>
+
+        <img width="350" height="400" title="texto ayuda" alt="ayuda" src="resources/imgs/img01.png" border="1">
+        <img width="350" height="400" src="resources/imgs/img02.jpg" border="1">
+
+        <picture>
+            <source media ="(min-width:1000px)" srcset="resources/imgs/img03.png">
+            <source media ="(min-width:900px)" width="350" heigth="400" srcset="resources/imgs/img04.jpg">
+            <img width="350" height="400" src="resources/imgs/img05.jpg" border="1">
+        </picture>
+
+        <h3>ingreso de datos</h3>
+        <!-- "etiqueta form"  -->
+        <form action = "pra.jsp" method="post">
+            <fieldset>
+                <!-- titulo tabla -->
+                <legend>Registro Clientes</legend>
+                <!-- texto -->
+                <label for="">Dato:</label>
+                <input type ="text"><br>
+
+                <label for="">Email:</label>
+                <!-- email-->
+                <input type ="email" required name="email"><br>
+                <!-- calendario -->
+                <label for="">Fecha:</label>
+                <input type ="date" required name="fecha"><br>
+                <!-- Botón de envío de formulario -->
+                <input type ="submit" required name="send!"><br>
+                <!-- Botón de envío con imagen -->
+                <input type="image"><br>
+                <!-- Botón de borrar formulario -->
+                <input type="reset"><br>
+                <!-- Botón sin funcionalidad -->
+                <!-- <input type="button"> -->
+
+                <select name="dropdown">
+                    <option value="1">valor 1</option>
+                    <option value="2">valor 2</option>
+                    <option value="3">valor 3</option>
+                </select><br>
+                <input type="sumit" name="send" value="Send!">
+                 
+            </fieldset>
+        </form>
+    </body>
+    <div style="border:1px solid blue; background-color: aqua; ">
+        <p style = "color: brown;">texto <span  style ="color: blueviolet;">uno</span></p>
+    </div>
+
+    <div id ="identificador">
+        <p style="color:yellowgreen;">texto<span  style ="color:brown;">uno</span></p>
+    </div>
+
+</html>
